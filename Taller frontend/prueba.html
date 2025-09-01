@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Frutas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 to-pink-100 font-sans text-gray-800">
+
+    <header class="text-center py-6 bg-pink-200 shadow-md">
+        <h1 class="text-4xl font-bold mb-2">🍓 Bienvenidos a mi lista de frutas 🍓</h1>
+        <p class="text-lg italic">¡Disfrutá de esta deliciosa selección frutal!</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6">
+        <!-- Imagen -->
+        <div class="flex justify-center mb-6">
+            <img src="imagenes/frutaimagen.jpg" alt="Frutas" class="rounded-xl shadow-md w-1/2 object-cover">
+        </div>
+
+        <!-- Lista de frutas -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-2">🍇 Frutas disponibles</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li>🍌 Banana</li>
+                <li>🍉 Sandía</li>
+                <li>🍊 Naranja</li>
+                <li>🍈 Melón</li>
+                <li>🍇 Uva</li>
+                <li>🍎Manzana</li>
+            </ul>
+        </section>
+
+        <!-- Descripciones -->
+        <section class="grid md:grid-cols-2 gap-4 mb-10">
+            <div class="bg-white p-4 rounded-xl shadow">
+                <h3 class="text-xl font-bold">🍌 Banana</h3>
+                <p>amarilla, con potacsio y purete.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow">
+                <h3 class="text-xl font-bold">🍉 Sandía</h3>
+                <p>Grande, verdosa y rica.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow">
+                <h3 class="text-xl font-bold">🍇 Uva</h3>
+                <p>Lila, chiquita y cute.</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow">
+                <h3 class="text-xl font-bold">🍎 Manzana</h3>
+                <p>Roja, rica y con forma de corazón.</p>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <section class="bg-white p-6 rounded-xl shadow mb-10">
+            <h2 class="text-2xl font-semibold mb-4">¿Querés sugerir una nueva fruta?</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="nombre" class="block text-sm font-medium">Nombre de la fruta:</label>
+                    <input type="text" id="nombre" class="w-full border rounded p-2 mt-1" placeholder="Ej: Kiwi">
+                </div>
+                <div class="mb-4">
+                    <label for="descripcion" class="block text-sm font-medium">¿Por qué deberíamos incluirla?</label>
+                    <textarea id="descripcion" rows="3" class="w-full border rounded p-2 mt-1" placeholder="Es rica o algo así..."></textarea>
+                </div>
+                <div>
+                    <button type="button" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">
+                        Enviar sugerencia 🍍
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-pink-200 text-center py-4 mt-10 shadow-inner">
+        <p class="font-bold">Marcelo, el más frutero 2025 🍍</p>
+        <p>Gracias por visitar la lista más fachera de frutas que vas a ver 😎</p>
+    </footer>
+
+</body>
+</html>
